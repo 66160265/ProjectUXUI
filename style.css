@@ -1,0 +1,145 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    nav {
+        background: #36b9e9;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, .2);
+    }
+
+    .nav-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        list-style: none;
+        margin-left: 1rem;
+    }
+
+    .nav-container {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    a {
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    .box-welcome {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+        height: 300px;
+        background: #5fc6eb;
+        border-radius: 15px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, .2);
+    }
+
+    .box-welcome p {
+        color: #fff;
+    }
+
+    .box-welcome .first-text {
+        padding-top: 30px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-welcome .second-text {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-welcome .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 150px;
+    }
+
+    .box-welcome button {
+        font-size: large;
+        background-color: #1db1e7;
+        padding: 10px 30px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, .2);
+    }
+
+    .box-schedule {
+        margin-left: auto;
+        margin-right: auto;
+        background: #E6F8FE;
+        width: 1200px;
+        height: 450px;
+        border-radius: 20px;
+    }
+
+    #schedule {
+        margin-top: 40px;
+        margin-left: 333px;
+    }
+
+    .anime-container {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        overflow: hidden;
+        height: 450px;
+    }
+
+    .swiper {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .swiper-slide {
+        background: none;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        max-height: 340.31px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .anime-title {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .episode {
+        color: gray;
+        font-size: 14px;
+    }
+
+    .timer {
+        margin: 10px 0px;
+        font-weight: bold;
+    }
