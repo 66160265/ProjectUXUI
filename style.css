@@ -78,12 +78,12 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 150px;
+        height: 135px;
     }
 
     .box-welcome button {
         font-size: large;
-        background-color: #1db1e7;
+        background-color: #1aa4d6;
         padding: 10px 30px;
         border-radius: 8px;
         border: none;
