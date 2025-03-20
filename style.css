@@ -235,3 +235,58 @@
     .anime-name {
         font-size: 14px
     }
+
+    #list {
+        font-size: 36px;
+        margin-top: 75px;
+        margin-left: 300px;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+        height: 300px;
+        background: #333;
+    }
+
+    .searching {
+        display: flex;
+        gap: 5px;
+    }
+
+    .searching img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .search-box input {
+        border-radius: 5px;
+        margin-top: 5px;
+        padding-left: 10px;
+        width: 1200px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .filter-item {
+        display: flex;
+        gap: 5px;
+    }
+
+    .filter-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .filter-box select {
+        width: 260px;
+        height: 40px;
+    }
