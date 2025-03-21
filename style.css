@@ -93,9 +93,10 @@
     .box-schedule {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 100px;
         background: #E6F8FE;
         width: 1200px;
-        height: 450px;
+        height: 500px;
         border-radius: 20px;
     }
 
@@ -111,7 +112,7 @@
         margin-right: auto;
         width: 90%;
         overflow: hidden;
-        height: 450px;
+        height: 500px;
     }
 
     .swiper {
@@ -167,7 +168,7 @@
     
     .anime-card {
         overflow: hidden;
-        transition: transform 0.3s;
+        transition: 0.3s;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     }
@@ -247,16 +248,14 @@
         margin-left: auto;
         margin-right: auto;
         width: 1200px;
-        height: 300px;
-        background: #333;
     }
 
-    .searching {
+    .search-title {
         display: flex;
         gap: 5px;
     }
 
-    .searching img {
+    .search-title img {
         width: 35px;
         height: 35px;
     }
@@ -273,20 +272,163 @@
     .filters {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        width: 1200px;
+        gap: 40px;
+        margin-top: 30px;
     }
 
-    .filter-item {
+    .filter-title {
         display: flex;
         gap: 5px;
     }
 
-    .filter-item img {
+    .filter-title img {
         width: 35px;
         height: 35px;
     }
 
     .filter-box select {
-        width: 260px;
+        width: 270px;
         height: 40px;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+
+    .anime-list-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 1200px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 40px;
+    }
+
+    .anime-list-card {
+        display: flex;
+        width: 580px;
+        height: 250px;
+        background: #b0eaff;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    
+    .anime-list-card:hover {
+        transform: scale(1.05);
+    }
+
+    .anime-list-img img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .anime-list-info {
+        padding-top: 5px;
+        padding-left: 10px;
+        width: 368px;
+        position: relative;
+    }
+
+    .anime-list-type {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5px;
+        row-gap: 10px;
+        width: 347px;
+        margin-top: 10px;
+    }
+
+    .list-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 20px;
+        background: #1fc6f0;
+        border-radius: 5px;
+    }
+
+    #line {
+        margin-top: 20px ;
+        width: 383px;
+        height: 2px;
+        border-radius: 1px;
+        background: #333;
+    }
+
+    .anime-list-platform {
+        display: grid;
+        position: absolute;
+        bottom: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 150px;
+        gap: 10px;
+    }
+
+    .anime-list-platform-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+    }
+
+    .anime-list-platform-img img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .other {
+        display: flex;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        background: #31dbf1;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .calendar-day-time {
+        display: flex;
+        position: absolute;
+        bottom: 14px;
+        right: 0px;
+        gap: 10px;
+    }
+
+    .calendar-day {
+        display: flex;
+        padding: 0 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background: #2bd9f8;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .calendar-day img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .calendar-time {
+        display: flex;
+        padding: 0 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background: #2bd9f8;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .calendar-time img {
+        width: 20px;
+        height: 20px;
     }

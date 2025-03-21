@@ -28,35 +28,156 @@
     </header>
     <div id="list">รายชื่ออนิเมะ</div>
     <div class="search-container">
-        <div class="searching">
+        <div class="search-title">
             <img src="images/icon/search.png" alt="">
             <h2>ค้นหา</h2>
         </div>
         <div class="search-box">
-            <input type="text" placeholder="พิมพ์ชื่อเรื่องได้ที่นี่..">
+            <input type="text" id="search-input" placeholder="พิมพ์ชื่อเรื่องได้ที่นี่..">
         </div>
         <div class="filters">
             <div class="filter-item">
-                <img src="images/icon/list.png" alt="">
-                <h2>ประเภท</h2>
+                <div class="filter-title">
+                    <img src="images/icon/list.png" alt="">
+                    <h2>ประเภท</h2>
+                </div>
                 <div class="filter-box">
-                    <select name="" id="">
+                    <select id="type-filter">
                         <option value="">ทั้งหมด</option>
-                        <option value="">ต่อสู้</option>
+                        <option value="action">แอ็กชัน</option>
+                        <option value="adventure">ผจญภัย</option>
+                        <option value="comedy">ตลก</option>
+                        <option value="drama">ดราม่า</option>
+                        <option value="fantasy">แฟนตาซี</option>
+                        <option value="sci-fi">ไซไฟ</option>
+                        <option value="romance">โรแมนติก</option>
+                        <option value="horror">สยองขวัญ</option>
+                        <option value="mystery">ลึกลับ</option>
+                        <option value="supernatural">เหนือธรรมชาติ</option>
+                        <option value="sliceoflife">ชีวิตประจำวัน</option>
+                        <option value="sports">กีฬ่า</option>
+                        <option value="music">ดนตรี</option>
+                        <option value="isekai">ต่างโลก</option>
+                        <option value="psychological">จิตวิทยา</option>
+                        <option value="historical">ย้อนยุค</option>
                     </select>
                 </div>
             </div>
             <div class="filter-item">
-                <img src="images/icon/list.png" alt="">
-                <h2>ประเภท</h2>
+                <div class="filter-title">
+                    <img src="images/icon/season.png" alt="">
+                    <h2>ซีซั่น/ฤดู</h2>
+                </div>
+                <div class="filter-box">
+                    <select id="season-filter">
+                        <option value="">ทั้งหมด</option>
+                        <option value="winter">❄️ หนาว</option>
+                        <option value="spring">🌿 ใบไม้ผลิ</option>
+                        <option value="summer">☀️ ร้อน</option>
+                        <option value="fall">🍂 ใบไม้ร่วง</option>
+                    </select>
+                </div>
             </div>
-            <div class="filter-box">
-                <select name="" id="">
-                    <option value="">ทั้งหมด</option>
-                    <option value="">ต่อสู้</option>
-                </select>
+            <div class="filter-item">
+                <div class="filter-title">
+                    <img src="images/icon/calendar.png" alt="">
+                    <h2>ปี</h2>
+                </div>
+                <div class="filter-box">
+                    <select id="year-filter">
+                        <option value="">ทั้งหมด</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-title">
+                    <img src="images/icon/copyright.png" alt="">
+                    <h2>ลิขสิทธ์ (ในไทย)</h2>
+                </div>
+                <div class="filter-box">
+                    <select id="platform-filter">
+                        <option value="">ทั้งหมด</option>
+                        <option value="bilibili">BiliBili</option>
+                        <option value="iqiyi">iQIYI</option>
+                        <option value="aisplay">AIS PLAY</option>
+                        <option value="flixer">Flixer</option>
+                        <option value="trueid">TrueID</option>
+                        <option value="netflix">Netflix</option>
+                        <option value="primevideo">Prime Video</option>
+                        <option value="disney+">Disney+</option>
+                        <option value="crunchyroll">Crunchyroll</option>
+                        <option value="wetv">WeTV</option>
+                        <option value="viu">Viu</option>
+                        <option value="laftel">Laftel</option>
+                        <option value="youtube">Youtube</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
+    <div class="anime-list-container" id="anime-list">
+        <div class="anime-list-card" data-name="Solo Leveing" data-type="action, adventure, fantasy" data-season="winter" data-year="2025" data-platform="trueid, iqiyi, bilibili, netflix, crunchyroll, laftel">
+            <div class="anime-list-img">
+                <img src="images/animePoster/Saturday/Solo Leveling.png" alt="Solo Leveling">
+            </div>
+            <div class="anime-list-info">
+                <div class="anime-list-name">Solo Leveling ซีซั่น 2 -ตื่นขึ้นจากเงา-</div>
+                <div class="anime-list-type">
+                    <div class="list-type">แอ็กชัน</div>
+                    <div class="list-type">ผจญภัย</div>
+                    <div class="list-type">แฟนตาซี</div>
+                </div>
+                <div id="line"></div>
+                <div class="anime-list-platform">
+                    <div class="anime-list-platform-img">
+                        <img src="images/streamingIcon/trueid.png" alt="">
+                    </div>
+                    <div class="anime-list-platform-img">
+                        <img src="images/streamingIcon/iqiyi.png" alt="">
+                    </div>
+                    <div class="anime-list-platform-img">
+                        <img src="images/streamingIcon/bilibili.png" alt="">
+                    </div>
+                    <div class="other">+3</div>
+                </div>
+                <div class="calendar-day-time">
+                    <div class="calendar-day">
+                        <img src="images/icon/calendar.png" alt="">
+                        <h2>ส.</h2>
+                    </div>
+                    <div class="calendar-time">
+                        <img src="images/icon/time.png" alt="">
+                        <h2>23:30</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime-list-card">
+            <div class="anime-list-img">
+                <img src="images/animePoster/Sunday/Excrosist.jpg" alt="Excrosist">
+            </div>
+            <div class="anime-list-info">
+                <div class="anime-list-name">Solo Leveling ซีซั่น 2 -ตื่นขึ้นจากเงา-</div>
+                <div class="anime-list-type">fafafa</div>
+            </div>
+        </div>
+    </div>
+    <script src="JavaScripts/searchAndSelect.js"></script>
 </body>
 </html>
