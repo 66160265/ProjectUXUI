@@ -301,6 +301,7 @@
         grid-template-columns: repeat(2, 1fr);
         width: 1200px;
         margin-top: 50px;
+        margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
         gap: 40px;
@@ -330,16 +331,16 @@
     .anime-list-info {
         padding-top: 5px;
         padding-left: 10px;
-        width: 368px;
+        width: 403px;
         position: relative;
     }
 
     .anime-list-type {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 5px;
         row-gap: 10px;
-        width: 347px;
+        width: 383px;
         margin-top: 10px;
     }
 
@@ -347,8 +348,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: auto;
-        height: 20px;
+        width: 100%;
+        height: 25px;
         background: #1fc6f0;
         border-radius: 5px;
     }
@@ -364,10 +365,10 @@
     .anime-list-platform {
         display: grid;
         position: absolute;
-        bottom: 10px;
+        bottom: 5px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 150px;
-        gap: 10px;
+        column-gap: 10px;
     }
 
     .anime-list-platform-img {
@@ -393,42 +394,12 @@
         font-size: 16px;
     }
 
-    .calendar-day-time {
+    .status {
         display: flex;
         position: absolute;
-        bottom: 14px;
-        right: 0px;
-        gap: 10px;
-    }
-
-    .calendar-day {
-        display: flex;
-        padding: 0 5px;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        background: #2bd9f8;
+        padding: 0 15px;
+        bottom: 10px;
+        right: 10px;
+        background: #31dbf1;
         border-radius: 5px;
-        font-size: 12px;
-    }
-
-    .calendar-day img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .calendar-time {
-        display: flex;
-        padding: 0 5px;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        background: #2bd9f8;
-        border-radius: 5px;
-        font-size: 12px;
-    }
-
-    .calendar-time img {
-        width: 20px;
-        height: 20px;
     }
