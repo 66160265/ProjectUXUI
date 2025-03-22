@@ -167,6 +167,7 @@
     }
     
     .anime-card {
+        cursor: pointer;
         overflow: hidden;
         transition: 0.3s;
         border-radius: 10px;
@@ -308,6 +309,7 @@
     }
 
     .anime-list-card {
+        cursor: pointer;
         display: flex;
         width: 580px;
         height: 250px;
@@ -333,6 +335,10 @@
         padding-left: 10px;
         width: 403px;
         position: relative;
+    }
+
+    .anime-list-name {
+        font-size: 20px;
     }
 
     .anime-list-type {
@@ -366,7 +372,7 @@
         display: grid;
         position: absolute;
         bottom: 5px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         width: 150px;
         column-gap: 10px;
     }
@@ -402,4 +408,102 @@
         right: 10px;
         background: #31dbf1;
         border-radius: 5px;
+    }
+
+    .info-container {
+        display: flex;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1600px;
+        height: 1000px;
+        background: #333;
+        position: relative;
+        justify-content: center;
+    }
+
+    .back-button {
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 25px;
+    }
+
+    .back-button button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .info-card {
+        display: flex;
+        width: 1200px;
+        height: 400px;
+        background: #1fc6f0;
+    }
+
+    .info-img {
+        display: flex;
+        width: 250px;
+        height: 350px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    .info-img img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .info-box {
+        margin-top: 25px;
+        margin-left: 20px;
+        width: 890px;
+        height: 350px;
+    }
+
+    .info-title {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 24px;
+    }
+
+    .info-introduction {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .info-type {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        width: 500px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .info-tag {
+        width: 100%;
+        height: 25px;
+        background: #f01fa0;
+        border-radius: 5px;
+    }
+
+    .studio {
+        margin-top: 10px;
+    }
+
+    .studio-text {
+        margin-bottom: 10px;
+    }
+
+    .studio-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .studio-img img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
     }
