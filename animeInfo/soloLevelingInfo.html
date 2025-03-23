@@ -28,7 +28,7 @@
     </header>
     <div class="info-container">
         <div class="back-button">
-            <button>Back</button>
+            <button onclick="goBack()">🡰 Back</button>
         </div>
         <div class="info-card">
             <div class="info-img">
@@ -55,6 +55,744 @@
                 </div>
             </div>
         </div>
+        <div class="bar">
+            <div id="head-text">ช่องทางการรับชม</div>
+            <div class="platform-buttons">
+                <button id="bilibili-btn" class="platform-btn active" onclick="selectPlatform(this, 'bilibili')"><img src="../images/streamingIcon/bilibili.png" alt="">BiliBili</button>
+                <button id="crunchyroll-btn" class="platform-btn" onclick="selectPlatform(this, 'crunchyroll')"><img src="../images/streamingIcon/crunchyroll.png" alt="">Crunchyroll</button>
+                <button id="netflix-btn" class="platform-btn" onclick="selectPlatform(this, 'netflix')"><img src="../images/streamingIcon/netflix.png" alt="">Netflix</button>
+                <button id="iqiyi-btn" class="platform-btn" onclick="selectPlatform(this, 'iqiyi')"><img src="../images/streamingIcon/iqiyi.png" alt="">iQIYI</button>
+                <button id="trueid-btn" class="platform-btn" onclick="selectPlatform(this, 'trueid')"><img src="../images/streamingIcon/trueid.png" alt="">TrueID</button>
+                <button id="laftel-btn" class="platform-btn" onclick="selectPlatform(this, 'laftel')"><img src="../images/streamingIcon/laftel.png" alt="">Laftel</button>
+            </div>
+            <div class="platform-content">
+                <div id="bilibili" class="platform">
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13581650?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 1</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13581722?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 2</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13581866?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 3</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13581949?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 4</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582035?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 5</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582141?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 6</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582223?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 7</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582280?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 8</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582372?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 9</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582475?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 10</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582558?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 11</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.bilibili.tv/play/2123726/13582632?bstar_from=bstar-web.pgc-video-detail.episode.all')">
+                        <h2>ตอนที่ 12</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/bilibili.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="crunchyroll" class="platform" style="display: none;">
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/GEVUW3W5G/you-arent-e-rank-are-you')">
+                        <h2>ตอนที่ 13</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/G7PU323K0/i-suppose-you-arent-aware')">
+                        <h2>ตอนที่ 14</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/G9DU9N9W1/still-a-long-way-to-go')">
+                        <h2>ตอนที่ 15</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/GX9U3M3NG/i-need-to-stop-faking')">
+                        <h2>ตอนที่ 16</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/G4VUW0WP9/this-is-what-were-trained-to-do')">
+                        <h2>ตอนที่ 17</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/G14UVJV8N/dont-look-down-on-my-guys')">
+                        <h2>ตอนที่ 18</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/GJWUQ7Q4V/the-10th-s-rank-hunter')">
+                        <h2>ตอนที่ 19</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/GN7UNKN5V/looking-up-was-tiring-me-out')">
+                        <h2>ตอนที่ 20</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/GK9UG2G7M/it-was-all-worth-it')">
+                        <h2>ตอนที่ 21</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/G50UMNMJV/we-need-a-hero')">
+                        <h2>ตอนที่ 22</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/GWDU7M7N2/its-going-to-get-even-more-intense')">
+                        <h2>ตอนที่ 23</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.crunchyroll.com/watch/GG1UX5XMW/are-you-the-king-of-humans')">
+                        <h2>ตอนที่ 24</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/crunchyroll.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="netflix" class="platform" style="display: none;">
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748524?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=677a6180ea7fc7c591c707c8')">
+                        <h2>ตอนที่ 13</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748525?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=678352acebcc8469d9525d7e')">
+                        <h2>ตอนที่ 14</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748526?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=678bd8a469cf086e343d2fea')">
+                        <h2>ตอนที่ 15</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748527?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=6795143672334081adcfd8be')">
+                        <h2>ตอนที่ 16</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748528?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=679e4e4017ea321453097c5a')">
+                        <h2>ตอนที่ 17</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748529?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=67a7895e341e1e630bd25e5a')">
+                        <h2>ตอนที่ 18</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748530?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=67b0c9601342affadf89413b')">
+                        <h2>ตอนที่ 19</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748531?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=67ba0764d35151bba8321fca')">
+                        <h2>ตอนที่ 20</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748532?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=67c33b86d35151bba8322c8d')">
+                        <h2>ตอนที่ 21</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748533?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=67cc73c6d35151bba8323934')">
+                        <h2>ตอนที่ 22</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748534?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=67d5aeb9d35151bba8324ad7')">
+                        <h2>ตอนที่ 23</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.netflix.com/watch/81748535?utm_source=hareshi&utm_medium=176496-616d2395ae5ae697facc8ac5&utm_campaign=67deea0f29e08debbc591053')">
+                        <h2>ตอนที่ 24</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/netflix.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="iqiyi" class="platform" style="display: none;">
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/139ua1xr16g?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=677a60e7ea7fc7c591c707bc')">
+                        <h2>ตอนที่ 13</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/10818umdwa8?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67835227ebcc8469d9525d76')">
+                        <h2>ตอนที่ 14</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/1xehdj4dc7k?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=678bd7e569cf086e343d2fde')">
+                        <h2>ตอนที่ 15</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/m2nfkne2w0?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=6795130672334081adcfd8a7')">
+                        <h2>ตอนที่ 16</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/19okxxls7mc?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=679e4cb717ea321453097c4f')">
+                        <h2>ตอนที่ 17</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/1cklw69ydic?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67a78911341e1e630bd25e4f')">
+                        <h2>ตอนที่ 18</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/18schkzmoag?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67b0c89c1342affadf894124')">
+                        <h2>ตอนที่ 19</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/d4eizai8xo?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67ba06a7d35151bba8321fbf')">
+                        <h2>ตอนที่ 20</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/wzkmki6ieg?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67c33b29d35151bba8322c82')">
+                        <h2>ตอนที่ 21</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/1a7r5i8zlao?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67cc734bd35151bba8323929')">
+                        <h2>ตอนที่ 22</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/16v26o34nu0?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67d5ad9cd35151bba8324ac4')">
+                        <h2>ตอนที่ 23</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://www.iq.com/play/uwibkn06o0?utm_source=hareshi&utm_medium=176496-6163733166aa2a2fefcf5403&utm_campaign=67dee98729e08debbc591048')">
+                        <h2>ตอนที่ 24</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/iqiyi.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="trueid" class="platform" style="display: none;">
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/nyb3WNbnJZn4/le4dryoOarOe')">
+                        <h2>ตอนที่ 1</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/kAZnyNgMGe4A/YpzPvorQZe46')">
+                        <h2>ตอนที่ 2</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/82V9YnJq54Aw/VgxL3dzGMJWg')">
+                        <h2>ตอนที่ 3</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/Dqxp4M8XaN7q/8kl7EX8wx4nd')">
+                        <h2>ตอนที่ 4</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/ZkpAVejw6zJ0/aNndOZQ6x9ry')">
+                        <h2>ตอนที่ 5</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/W0EQM2Lokk10/jNk9PWDOjb1a')">
+                        <h2>ตอนที่ 6</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/wDRJMNEwZLeD/4d15wnkLYM2d')">
+                        <h2>ตอนที่ 7</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/V8PplyMgbrr8/VAYBDpkw7eD1')">
+                        <h2>ตอนที่ 8</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/yBnV3vaeNmVB/ewGQ9xWJ2L2a')">
+                        <h2>ตอนที่ 9</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/VYQPjL5aOAE7/Zj4QqPVOGoY2')">
+                        <h2>ตอนที่ 10</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/DrdDA4g1bzyr/VOD1J0gE6ddA')">
+                        <h2>ตอนที่ 11</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://movie.trueid.net/th-th/series/6J5E1makGVZJ/Z0MrOK12xEAp/MNLy1OAEenPq/mBjAgv8wmxyP')">
+                        <h2>ตอนที่ 12</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/trueid.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="laftel" class="platform" style="display: none;">
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67822c99ebcc8469d9525a8a')">
+                        <h2>ตอนที่ 1</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad52829e08debbc590a7b')">
+                        <h2>ตอนที่ 2</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad53129e08debbc590a82')">
+                        <h2>ตอนที่ 3</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad53829e08debbc590a89')">
+                        <h2>ตอนที่ 4</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad54029e08debbc590a90')">
+                        <h2>ตอนที่ 5</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad54929e08debbc590a97')">
+                        <h2>ตอนที่ 6</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad55329e08debbc590a9e')">
+                        <h2>ตอนที่ 7</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad55b29e08debbc590aa5')">
+                        <h2>ตอนที่ 8</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad56329e08debbc590aac')">
+                        <h2>ตอนที่ 9</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad57929e08debbc590ab3')">
+                        <h2>ตอนที่ 10</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode" onclick="openInNewTab('https://laftel.tv/series/87/132?utm_source=hareshi&utm_medium=176496-65b7c0444416fc2e899580b1&utm_campaign=67dad58329e08debbc590aba')">
+                        <h2>ตอนที่ 11</h2>
+                        <div class="platform-logo">
+                            <img src="../images/streamingIcon/laftel.png" alt="">
+                        </div>
+                        <div class="opacity"></div>
+                        <div class="episode-img">
+                            <img src="../images/animeChapterPictures/Solo Leveling.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="../JavaScripts/selectPlatform.js"></script>
+    <script src="../JavaScripts/openInNewTab.js"></script>
+    <script src="../JavaScripts/goBack.js"></script>
 </body>
 </html>

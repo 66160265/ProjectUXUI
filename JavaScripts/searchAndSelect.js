@@ -8,20 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const animeCards = document.querySelectorAll(".anime-list-card");
 
     function filterAnime() {
-        const searchText = searchInput.value.toLowerCase();
+        const searchText = searchInput.value.toLowerCase().trim();
         const selectedType = typeFilter.value;
         const selectedSeason = seasonFilter.value;
         const selectedYear = yearFilter.value;
         const selectedPlatform = platformFilter.value;
 
         animeCards.forEach(card => {
-            const name = card.getAttribute("data-name").toLowerCase();
+            const nameList = card.getAttribute("data-name").toLowerCase().split(',').map(name => name.trim());
             const type = card.getAttribute("data-type");
             const season = card.getAttribute("data-season");
             const year = card.getAttribute("data-year");
             const platform = card.getAttribute("data-platform");
 
-            const matchesSearch = name.includes(searchText);
+            const matchesSearch = nameList.some(name => name.includes(searchText));
             const matchesType = selectedType === "" || type.split(", ").includes(selectedType);
             const matchesSeason = selectedSeason === "" || selectedSeason === season;
             const matchesYear = selectedYear === "" || selectedYear === year;

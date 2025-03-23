@@ -138,7 +138,7 @@
         margin-top: 10px;
     }
 
-    .episode {
+    .swiper.episode {
         color: gray;
         font-size: 14px;
     }
@@ -356,7 +356,7 @@
         align-items: center;
         width: 100%;
         height: 25px;
-        background: #1fc6f0;
+        background: #43f2f8;
         border-radius: 5px;
     }
 
@@ -416,8 +416,6 @@
         margin-left: auto;
         margin-right: auto;
         width: 1600px;
-        height: 1000px;
-        background: #333;
         position: relative;
         justify-content: center;
     }
@@ -425,20 +423,31 @@
     .back-button {
         display: flex;
         position: absolute;
-        left: 10px;
-        top: 25px;
+        left: 15px;
+        top: 50px;
     }
-
+    
     .back-button button {
+        cursor: pointer;
+        border: none;
+        background: #66d5fd;
+        border-radius: 5px;
         padding: 5px 10px;
         font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .back-button button:hover {
+        transform: scale(1.02);
     }
 
     .info-card {
         display: flex;
+        position: absolute;
         width: 1200px;
         height: 400px;
         background: #1fc6f0;
+        border-radius: 10px;
     }
 
     .info-img {
@@ -470,7 +479,7 @@
 
     .info-introduction {
         font-size: 18px;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .info-type {
@@ -485,7 +494,7 @@
     .info-tag {
         width: 100%;
         height: 25px;
-        background: #f01fa0;
+        background: #19ffff;
         border-radius: 5px;
     }
 
@@ -506,4 +515,185 @@
         width: 100%;
         object-fit: cover;
         border-radius: 10px;
+    }
+
+    .bar {
+        position: absolute;
+        width: 1200px;
+        padding-bottom: 25px;
+        background: rgb(158, 228, 253);
+        margin-top: 450px;
+        border-radius: 10px;
+    }
+
+    #head-text {
+        width: 1200px;
+        height: 65px;
+        background: #1fc6f0;
+        text-align: center;
+        align-content: center;
+        font-size: 24px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .platform-buttons {
+        display: flex;
+        width: 1160px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: end;
+        border-bottom: 2px solid #000;
+    }
+
+    .platform-btn {
+        display: flex;
+        width: auto;
+        background: none;
+        padding: 10px 15px;
+        gap: 5px;
+        font-size: 16px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #bilibili-btn.platform-btn:hover {
+        border: 2px solid #fff;
+    }
+
+    #crunchyroll-btn.platform-btn:hover {
+        border: 2px solid #23252B;
+    }
+
+    #netflix-btn.platform-btn:hover {
+        border: 2px solid #000;
+    }
+
+    #iqiyi-btn.platform-btn:hover {
+        border: 2px solid #191927; 
+    }
+
+    #trueid-btn.platform-btn:hover {
+        border: 2px solid #fff;
+    }
+
+    #laftel-btn.platform-btn:hover {
+        border: 2px solid #7E70F6;
+    }
+
+    .platform-buttons img {
+        width: 100%;
+        height: 24px;
+        object-fit: cover;
+    }
+
+    #bilibili-btn.active {
+        background: #fff;
+        color: #4C93FF;
+        border: 2px solid #fff;
+    }
+
+    #crunchyroll-btn.active {
+        background: #23252B;
+        color: #F47521;
+        border: 2px solid #23252B;
+    }
+
+    #netflix-btn.active {
+        background: #000;
+        color: #E40914;
+        border: 2px solid #000;
+    }
+
+    #iqiyi-btn.active {
+        background: #191927;
+        color: #fff;
+        border: 2px solid #191927;
+    }
+
+    #trueid-btn.active {
+        background: #fff;
+        color: #535353;
+        border: 2px solid #fff;
+    }
+
+    #laftel-btn.active {
+        background: #7E70F6;
+        color: #fff;
+        border: 2px solid #7E70F6;
+    }
+
+    .platform-content {
+        display: flex;
+        width: 1160px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .platform {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 1060px;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .episode {
+        cursor: pointer;
+        position: relative;
+        width: 1060px;
+        height: 100px;
+        transition: 0.3s;
+    }
+
+    .episode:hover {
+        transform: scale(1.02);
+    }
+
+    .episode-img {
+        width: 1060px;
+        height: 100px;
+    }
+
+    .episode-img img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .episode .opacity {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .episode h2 {
+        position: absolute;
+        color: #fff;
+        bottom: 4px;
+        left: 10px;
+    }
+
+    .platform-logo {
+        display: flex;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: 55px;
+        left: 1015px;
+        align-items: end;
+    }
+
+    .platform-logo img {
+        width: 100%;
+        object-fit: cover;
     }
