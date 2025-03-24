@@ -1,6 +1,6 @@
 var swiper = new Swiper('.swiper', {
     slidesPerView: 4,  /* จำนวนรายการที่แสดงต่อแถว */
-    spaceBetween: 20,  /* ระยะห่างระหว่างรายการ */
+    spaceBetween: 10,  /* ระยะห่างระหว่างรายการ */
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

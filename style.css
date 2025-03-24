@@ -117,7 +117,7 @@
 
     .swiper {
         width: 100%;
-        padding: 20px 0px;
+        padding: 20px 0px !important;
     }
 
     .swiper-slide {
@@ -126,11 +126,31 @@
     }
 
     .swiper-slide img {
-        width: 100%;
-        max-height: 340.31px;
+        width: 90%;
         border-radius: 10px;
         object-fit: cover;
-        box-shadow: 0px 10px 50px rgba(0, 0, 0, .2);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .swiper-slide img:hover {
+        transform: scale(1.05);
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+    }
+
+    .swiper-button-next {
+        right: 350px !important;
+        top: 730px !important;
+    }
+
+    .swiper-button-prev {
+        top: 730px !important;
+        left: 350px !important;
     }
 
     .anime-title {
